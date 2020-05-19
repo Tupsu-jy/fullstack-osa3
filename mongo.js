@@ -7,8 +7,7 @@ if (process.argv.length<3) {
 
 const password = process.argv[2]
 console.log(password)
-const url =
-  `mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority`
+const url =`mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority`
 
 
 let asd=mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
