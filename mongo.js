@@ -6,12 +6,12 @@ if (process.argv.length<3) {
 }
 
 const password = process.argv[2]
-
+console.log(password)
 const url =
   `mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority`
 
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-
+let asd=mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+console.log(asd)
 const noteSchema = new mongoose.Schema({
   name: String,
   number: String,
