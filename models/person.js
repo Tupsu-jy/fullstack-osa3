@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 const uniqueValidator = require('mongoose-unique-validator');
 
-//const url = process.env.MONGODB_URI
-const url = `mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority`
+const url = process.env.MONGODB_URI
+
 console.log('connecting to', url)
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result => {
