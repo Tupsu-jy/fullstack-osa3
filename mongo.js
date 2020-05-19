@@ -10,9 +10,9 @@ console.log(password)
 const url =`mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority`
 
 
+throw new MongooseError(url);
 
 mongoose.connect("mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
-throw new MongooseError(url);
 mongoose.connection.once('open', function(){
   console.log('Conection has been made!');
 }).on('error', function(error){
