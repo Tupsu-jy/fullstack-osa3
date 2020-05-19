@@ -6,7 +6,7 @@ if (process.argv.length<3) {
 }
 
 const password = process.argv[2]
-
+"what"
 const url =
   `mongodb+srv://ylinenjaakko:${password}@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority`
 
