@@ -10,14 +10,8 @@ console.log(password)
 const url =`mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority`
 
 
-throw new MongooseError(url);
+//mongoose.connect("mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
 
-mongoose.connect("mongodb+srv://ylinenjaakko:gis0oozo@cluster0-sbedh.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
-mongoose.connection.once('open', function(){
-  console.log('Conection has been made!');
-}).on('error', function(error){
-    console.log('Error is: ', error);
-});
 
 const noteSchema = new mongoose.Schema({
   name: String,
